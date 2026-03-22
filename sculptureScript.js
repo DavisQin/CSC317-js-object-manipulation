@@ -17,9 +17,11 @@ for (let i = 0; i < sculptureList.length; i++) {
 
 //console.log(sculptureListLengths)
 for (let i = 0; i < sculptureListLengths.length; i++) {
+    const item = sculptureListLengths[i]
+
     console.log('{')
     for (const key in sculptureListLengths[i]) {
-        console.log(`  ${key}: ${sculptureListLengths[i][key]}`)
+        console.log(`  ${key}: ${item[key]}`)
     }
     console.log('}\n')
 }
